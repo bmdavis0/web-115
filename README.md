@@ -1,0 +1,1 @@
+This is a collection of the projects completed over the course of the semester for WEB.115
