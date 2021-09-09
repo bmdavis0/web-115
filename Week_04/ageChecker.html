@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+  Name: Ben Davis
+  File name: ageChecker.html
+  Class Section: WEB.115.0001 
+  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ageChecker</title>
+</head>
+<body>
+  <h2>Age Checker Assignment (Week 04)</h2>
+  <p>Once you have verified your age, click the "Let's go!" button below.  You will be redirected to the appropriate website.</p>
+  <button id="proceedButton">Let's go!</button>
+
+  <script>
+    theAge = parseInt(prompt("Please enter your age to continue: "));
+    document.getElementById("proceedButton").addEventListener("click", myRedirect);
+
+    function myRedirect() {
+      if (theAge < 21) {
+        location.replace("http://www.disney.com");
+      } else {
+        location.replace("http://www.espn.com");
+      }
+    }
+  </script>
+</body>
+</html>
